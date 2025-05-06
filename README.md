@@ -1,7 +1,5 @@
 # CommandCracker - Hugh's 2025 FYP
 
-![CommandCracker Logo](https://i.ibb.co/MgBn1FL/kitten-cat-cat-pixel-pixelart-mug-removebg-preview.png=_60x)
-
 Welcome to the **CommandCracker** repository! This repository contains all the code behind the **CommandCracker** CTF platform, which allows users to learn cybersecurity in a gamified environment.
 
 ## 🌐 Live Site
