@@ -1,0 +1,100 @@
+
+@media (max-width: 768px) {
+
+    html{
+      background-color: #1A1A1D;
+    }
+    .layout-container {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100vw;
+      flex-grow: 1; 
+      padding: 0;
+      margin: 0;
+      min-height: 150px
+    }
+  
+
+      .code-cat-parent {
+        width: 90%;
+        height: 30vh; 
+      }
+
+      .command{
+        order: 3;
+      }
+    
+    .instructions-parent{
+      display: none;
+      order: 2;
+      border-radius: 8px;
+      width: 90%;
+      padding: 0;
+      margin: 0;
+      height: auto;
+    }
+
+    .instructions-title{
+      font-size: clamp(40px, 5vw, 15px);
+    }
+  
+    .terminal-parent{
+      order: 2; 
+      flex: 1;
+      width: 99%;
+      min-height: 150px;
+      overflow: hidden;
+    }
+
+
+    h3 {
+      z-index: 999;
+      position: relative;
+    }
+    
+
+
+    .toggle-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.8s cubic-bezier(0.25, 0.1, 0.25, 1), padding 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+      padding: 10px;
+    }
+    
+    .toggle-content.expanded {
+      max-height: 500px; /* Use a value large enough for your content */
+      padding: 10px;
+    }
+    
+    .toggle-contentcollapsed {
+      max-height: 0;
+    }
+
+
+    .code-cat-parent{ 
+      font-size: clamp(5px, 1vw, 90px);
+      box-shadow: none;
+      border: none;
+      background-color:transparent transparent !important;
+
+      padding:0;
+      margin: 0;
+      position: fixed;
+      bottom: 0;
+      z-index:999;
+      display: none;
+    }
+
+
+.point-bar{
+  display: flex;
+  order:4;
+}
+
+  /* .cat-button{
+    display: none;
+  } */
+  }
+
+
+

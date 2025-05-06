@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,500;1,766&display=swap');
+
+.container{
+  width:31.5vw;
+  height: 5vh;
+  margin: 15px 29px 0 23px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  position: relative;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.backbutton{
+  height: 6vh;
+  background-color: rgb(57, 23, 88);
+  width:7vh;
+  opacity: 1;
+  border-radius: 6px;
+}
+
+img{
+  height: 6vh;
+  width:7vh;
+  opacity: 1;
+}
+
+.coolborder{
+  background: linear-gradient(rgba(10, 20, 40, 0.9), rgba(10, 20, 40, 0.9)) padding-box,
+  linear-gradient(to top left, rgba(255, 255, 255, 0.16), rgba(255, 255, 255, 0.423) 20%, rgba(255, 255, 255, 0.055) 50%, rgba(255, 255, 255, 0) 80%, rgba(255, 255, 255, 0.272)) border-box;
+  border-radius: 10px;
+  border: 1.5px solid transparent;
+}
+
+.title{
+  margin-left: 20px;
+}
+
+.landingfont{
+  font-size: clamp(20px, 2vw, 90px); 
+   font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  color: aliceblue  ;
+}
+
+@media (max-width: 768px) {
+  .container{
+    width:85vw;
+    align-items: center;}
+}
+  

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Challenge 1 - Port Predicaments</title>
+  <script src="./warp.js"></script>
+  <script>
+  </script>
+  <style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
+s
+    body {
+        font-family: "Open Sans", serif;
+    }
+
+    .modal-overlay {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #2e2f33;
+      width: 100vw;
+      height: 100vh;
+      text-align: center;
+      color: #ffffff;
+      padding: 21px;
+      box-sizing: border-box;
+    }
+
+    .modal-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      max-width: 90%;
+      width: 600px; /* Limit max width for large screens */
+    }
+
+    .typing-demo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #ffffff;
+      margin-bottom: 20px;
+    }
+
+    .poppins-medium {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 500;
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+      margin-top: 20px;
+    }
+
+    button a {
+      text-decoration: none;
+      color: white;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    .wrapper {
+      display: grid;
+      place-items: center;
+    }
+
+    .typing-demo {
+      width: 30ch;
+      animation: typing 2s steps(30), blink .5s step-end infinite alternate;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 3px solid;
+      font-family: monospace;
+      font-size: 2em;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-size: 200% 100%;
+      border: none;
+      background-color: rgb(211, 16, 255);
+      font-weight: bold;
+      cursor: pointer;
+      animation: button 10s linear infinite;
+    }
+
+    @keyframes typing {
+      from {
+        width: 0;
+      }
+    }
+
+    @keyframes blink {
+      50% {
+        border-color: transparent;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .typing-demo {
+        font-size: 1.5em;
+        width: 20ch;
+      }
+
+      .poppins-medium {
+        font-size: 14px;
+      }
+
+      button {
+        font-size: 14px;
+        padding: 8px 16px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .typing-demo {
+        font-size: 1.2em;
+        width: 20ch;
+      }
+
+      .poppins-medium {
+        font-size: 12px;
+      }
+
+      button {
+        font-size: 12px;
+        padding: 8px 14px;
+      }
+    }
+  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/p5.min.js"></script>
+</head>
+<body>
+  <div class="modal-overlay">
+    <div class="modal-box">
+      <div class="wrapper">
+        <div class="typing-demo">
+          Challenge 1 - Port Predicament
+        </div>
+      </div>  
+      <p class='poppins-medium'>You have gained access to a server. Check any unusual ports that are open and try and extract some info from them...</p>
+
+      <button><a href="/challenge"><code>Start Game / Timer</code></a></button>
+    </div>
+  </div>
+  
+</body>
+
+</html>
